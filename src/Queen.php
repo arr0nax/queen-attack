@@ -73,6 +73,22 @@
                 }
             }
         }
+
+        function removePiece($activeX, $activeY) {
+            $activePiece = new Piece(0,0);
+            foreach ($this as $piece) {
+                if ($piece->active == true) {
+                    $activePiece = $piece;
+                }
+            }
+            foreach ($this as $piece) {
+                if ($activePiece->xCoord == $piece->xCoord && $activePiece->yCoord == $piece->yCoord) {
+                    $piece->xCoord = null;
+                    $piece->yCoord = null;
+                }
+            }
+        }
+
     }
 
     class Piece implements JsonSerializable

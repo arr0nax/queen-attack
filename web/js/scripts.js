@@ -35,9 +35,9 @@ $(function() {
         var xIndex = parseInt(removeLetters($(this).attr("id")));
         var yIndex = parseInt(removeLetters($(this).parent().attr("id")));
             $.post("/move", {xIndex: xIndex, yIndex: yIndex}, function(response) {
-              console.log(response);
-              game = JSON.parse(response);
-              setBoard(game);
+                console.log(response);
+                game = JSON.parse(response);
+                setBoard(game);
             });
         });
 

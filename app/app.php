@@ -21,6 +21,8 @@ $app->post('/move', function() use ($app) {
     $activeY = $_POST['yIndex'];
     $_SESSION['game']->selectPiece($activeX, $activeY);
     $_SESSION['game']->movePiece($activeX, $activeY);
+    $_SESSION['game']->removePiece($activeX, $activeY);
+
     return json_encode($_SESSION['game']);
     });
 
