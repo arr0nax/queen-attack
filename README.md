@@ -1,7 +1,7 @@
 # queen attack
 ## a website about chess
-this site contains the logic required to check if a chess piece can make a valid attack on another piece
-it was made to learn how to incorporate javascript into php, and sends information from javascript to the php app
+This site contains the logic required to check if a chess piece can make a valid attack on another piece. 
+It was made to learn how to incorporate javascript into php, and sends information from javascript to the php app.
 
 ## Application Spex
 * _detect possible vertical collision_
